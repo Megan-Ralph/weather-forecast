@@ -1,3 +1,12 @@
-<h1>Weather in <%= params[:location] %></h1>
-<p>Temperature: <%= @temperature %>°C</p>
-<p>Description: <%= @description %></p>
+<body style="background-image: url('<%= @location_image %>'); background-repeat: no-repeat; background-size: cover;">
+  <div class="row justify-content-center align-items-center vh-100">
+    <div class="col-md-6">
+      <div class="card p-4">
+        <h1 class="text-center">Weather in <%= params[:location] %></h1>
+        <hr>
+        <h2 class="text-center">Temperature: <%= @temperature %>°C</p>
+        <p class="text-center">Description: <%= @description %></p>
+      </div>
+    </div>
+  </div>
+</body>
